@@ -128,7 +128,15 @@
       </ion-select>
     </ion-item>
 
-    <ion-label>7 - Você conhece o curso de LCC?</ion-label>
+    <ion-label>7 - Gosta de tecnologia?</ion-label>
+    <ion-item text-wrap>
+      <ion-select class="campos" [(ngModel)]="question.eight" formControlName="eightquestion" name="eightquestion" interface="popover">
+        <ion-option value=true>Sim</ion-option>
+        <ion-option value=false>Não</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-label>8 - Você conhece o curso de LCC?</ion-label>
     <ion-item text-wrap>
       <ion-select class="campos" [(ngModel)]="question.seven" formControlName="sevenquestion" name="sevenquestion" interface="popover">
         <ion-option value=true>Sim</ion-option>
@@ -136,13 +144,7 @@
       </ion-select>
     </ion-item>
 
-    <ion-label>8 - Gosta de tecnologia?</ion-label>
-    <ion-item text-wrap>
-      <ion-select class="campos" [(ngModel)]="question.eight" formControlName="eightquestion" name="eightquestion" interface="popover">
-        <ion-option value=true>Sim</ion-option>
-        <ion-option value=false>Não</ion-option>
-      </ion-select>
-    </ion-item>
+ 
 
     <div text-center>
       <button class="botao-finish"ion-button type="submit" [disabled]="quizForm.invalid">FINISH!</button>
