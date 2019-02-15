@@ -17,6 +17,7 @@ export interface Quiz{
   planosFuturos: string;
   conheceLCC: boolean;
   gostaTecnologia: boolean;
+  dateCreation: Date;
   
   
 }
@@ -48,7 +49,8 @@ export class QuizServiceProvider {
       redeSocial: question.five,
       planosFuturos: question.six,
       conheceLCC: question.seven,
-      gostaTecnologia: question.eight 
+      gostaTecnologia: question.eight,
+      dateCreation: new Date()
     };
     
     return ref.set(quizAdd);
